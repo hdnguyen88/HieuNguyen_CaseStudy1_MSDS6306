@@ -7,6 +7,7 @@ download.file(file2, destfile = "EDU.csv")
 
 
 ##Format the columns
+##Skip column 3 because it is an empty column
 
 gdpdata <- read.csv("GDP.csv", skip = 4, nrows = 190)
 edudata <- read.csv("EDU.csv")
